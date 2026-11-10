@@ -127,7 +127,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: hsl(0, 0%, 80%);
   border: 3px solid var(--white);
-  border-radius: 10px;
+  border-radius: var(--border-radius-md);
 }
 
 body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
@@ -155,7 +155,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   border-radius: 20px;
 }
 
-.has-scrollbar:hover::-webkit-scrollbar-thumb { background: hsl(0, 0%, 90%); }
+.has-scrollbar:hover::-webkit-scrollbar-thumb { background: var(--cultured); }
 
 .has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }
 
@@ -1150,7 +1150,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   background: var(--cultured);
   position: relative;
   height: 10px;
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
 }
 
 .product-featured .showcase-status-bar::before {
@@ -1161,7 +1161,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   height: 4px;
   width: 40%;
   background: var(--salmon-pink);
-  border-radius: 4px;
+  border-radius: var(--border-radius-sm);
 }
 
 .product-featured .countdown-desc {
@@ -2168,7 +2168,7 @@ footer {
 
   .header-social-container .social-link {
     padding: 5px;
-    background: hsl(0, 0%, 95%);
+    background: var(--cultured);
     border-radius: var(--border-radius-sm);
     color: var(--sonic-silver);
     transition: var(--transition-timing);

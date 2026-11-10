@@ -20,17 +20,17 @@
    * colors
    */
 
-  --spanish-gray: hsl(0, 0%, 60%);
-  --sonic-silver: hsl(0, 0%, 47%);
-  --eerie-black: hsl(0, 0%, 13%);
-  --salmon-pink: hsl(353, 100%, 78%);
-  --sandy-brown: hsl(29, 90%, 65%);
-  --bittersweet: hsl(0, 100%, 70%);
-  --ocean-green: hsl(152, 51%, 52%);
-  --davys-gray: hsl(0, 0%, 33%);
-  --cultured: hsl(0, 0%, 93%);
+  --spanish-gray: var(--color-neutral-400);
+  --sonic-silver: var(--color-neutral-600);
+  --eerie-black: var(--color-neutral-900);
+  --salmon-pink: var(--color-red-300);
+  --sandy-brown: var(--color-orange-300);
+  --bittersweet: var(--color-red-400);
+  --ocean-green: var(--color-green-400);
+  --davys-gray: var(--color-neutral-700);
+  --cultured: var(--color-neutral-100);
   --white: hsl(0, 100%, 100%);
-  --onyx: hsl(0, 0%, 27%);
+  --onyx: var(--color-neutral-800);
 
   /**
    * typography
@@ -60,6 +60,16 @@
 
   --border-radius-md: 10px;
   --border-radius-sm: 5px;
+  --color-green-400: #46C389;
+  --color-neutral-100: #EDEDED;
+  --color-neutral-400: #999999;
+  --color-neutral-600: #787878;
+  --color-neutral-700: #545454;
+  --color-neutral-800: #454545;
+  --color-neutral-900: #212121;
+  --color-orange-300: #F6A355;
+  --color-red-300: #FF8F9C;
+  --color-red-400: #FF6666;
 
   /**
    * transition 
@@ -137,8 +147,8 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: hsl(0, 0%, 80%);
   border: 3px solid var(--white);
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  -webkit-border-radius: var(--border-radius-md);
+          border-radius: var(--border-radius-md);
 }
 
 body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
@@ -167,7 +177,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
           border-radius: 20px;
 }
 
-.has-scrollbar:hover::-webkit-scrollbar-thumb { background: hsl(0, 0%, 90%); }
+.has-scrollbar:hover::-webkit-scrollbar-thumb { background: var(--cultured); }
 
 .has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }
 
@@ -1457,8 +1467,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   background: var(--cultured);
   position: relative;
   height: 10px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  -webkit-border-radius: var(--border-radius-sm);
+          border-radius: var(--border-radius-sm);
 }
 
 .product-featured .showcase-status-bar::before {
@@ -1469,8 +1479,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   height: 4px;
   width: 40%;
   background: var(--salmon-pink);
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  -webkit-border-radius: var(--border-radius-sm);
+          border-radius: var(--border-radius-sm);
 }
 
 .product-featured .countdown-desc {
@@ -2654,7 +2664,7 @@ footer {
 
   .header-social-container .social-link {
     padding: 5px;
-    background: hsl(0, 0%, 95%);
+    background: var(--cultured);
     -webkit-border-radius: var(--border-radius-sm);
             border-radius: var(--border-radius-sm);
     color: var(--sonic-silver);
